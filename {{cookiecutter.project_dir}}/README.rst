@@ -1,0 +1,64 @@
+{{cookiecutter.project_name}}
+=============================
+
+This Azure Machine Learning project was generated using `Cookiecutter`_ along
+with `@willem_meints`_'s `azureml-cookiecutter`_ template.
+
+We'll cover the following topics in this README:
+
+.. contents::
+
+Getting started
+---------------
+To set up your project, follow these steps:
+
+- :code:`pip install -r requirements.txt`
+- :code:`python tasks/make_workspace.py --name <my_workspace> --resource_group <my_resource_group>`
+- :code:`python tasks/make_dataset.py --name <dataset_name> --input_file <my_data_file>`
+- :code:`python tasks/make_environment.py --name <name>`
+
+After executing these tasks you can start working on your project.
+
+Documentation
+-------------
+
+Creating or editing tasks
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The project contains a number of tasks. Tasks are implemented as python scripts
+and allow you to manage your project. For example, tasks allow you to manage the
+machine learning workspace, run an experiment on a remote environment, and 
+deploy your model to production. 
+
+Check out the predefined tasks to get an idea of what they do and how to create
+your own tasks in the project.
+
+Writing your model code
+~~~~~~~~~~~~~~~~~~~~~~~
+Next to the tasks, there's the code that you use to train your model or perform
+inference using your model. These files are stored in the 
+:code:`{{cookiecutter.package_name}}` folder.
+
+The following files are created by default:
+
+- :code:`train.py` - This file is used for training the model
+- :code:`score.py` - This file is used for inferencing
+
+Working with data
+~~~~~~~~~~~~~~~~~
+We recommend you split data preprocessing from training as much as 
+possible. We also recommend that you split your data preprocessing in several 
+sub-tasks each with its own script in the :code`tasks` folder. This will allow 
+you to repeat a step when something fails.
+
+Fro that reason, the project contains a :code:`data` folder. This folder is 
+split into three sub-folders: :code:`raw`, :code:`interim`, and 
+:code:`processed`. You can use these folders to store raw, interim, and fully 
+pre-processed datasets.
+
+Use the :code:`tasks/make_dataset.py` script to upload the datasets to the 
+azure workspace after you've created. Alternatively, you can write your own
+custom task to process data and upload it from there.
+
+.. _`Cookiecutter`: https://github.com/audrey/cookiecutter/
+.. _`@willem_meints`: https://github.com/wmeints/
+.. _`azureml-cookiecutter`: https://github.com/wmeints/azureml-cookiecutter/

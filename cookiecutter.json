@@ -1,4 +1,5 @@
 {
   "project_dir": "aml-project",
-  "project_name": "my_project"
+  "project_name": "My project",
+  "package_name": "my_project"
 }

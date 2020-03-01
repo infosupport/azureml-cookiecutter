@@ -4,3 +4,4 @@ azureml-defaults
 pyarrow>=0.11.0
 joblib>=0.14.1
 azureml-dataprep[fuse,pandas]
+click>=7.0

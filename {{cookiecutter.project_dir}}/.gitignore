@@ -1,2 +1,6 @@
 *.pyc
 config.json
+.azureml
+data/
+outputs/
+logs/
