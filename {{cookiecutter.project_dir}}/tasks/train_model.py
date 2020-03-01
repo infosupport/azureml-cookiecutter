@@ -18,7 +18,7 @@ Parameters
 
 import click
 from pathlib import Path
-from azureml.core import Workspace, Experiment, Dataset
+from azureml.core import Workspace, Experiment, Dataset, ComputeTarget
 from azureml.train.sklearn import SKLearn
 
 @click.command()
@@ -33,13 +33,13 @@ def main(experiment, environment, dataset):
     # Use the root of the solution as source folder for the run.
     root_folder = Path(__file__).parent.parent
 
-    # Provide each of the datasets to the estimator as a named entry.
+    # Provide each of the datasets to the estimator as a named input.
     # You can acccess these from within the training script.
-    datasets = [Dataset.get_by_name(ds).as_named_entry(ds) for ds in dataset]
+    datasets = [Dataset.get_by_name(workspace, ds).as_named_input(ds) for ds in dataset]
 
     estimator = SKLearn(
         source_directory=root_folder,
-        entry_script='../{{cookiecutter.package_name}}/train.py',
+        entry_script='{{cookiecutter.package_name}}/train.py',
         pip_requirements_file='requirements.txt',
         compute_target=compute_target,
         inputs=datasets
