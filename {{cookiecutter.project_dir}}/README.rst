@@ -2,7 +2,7 @@
 =============================
 
 This Azure Machine Learning project was generated using `Cookiecutter`_ along
-with `@willem_meints`_'s `azureml-cookiecutter`_ template.
+with `@wmeints`_'s `azureml-cookiecutter`_ template.
 
 We'll cover the following topics in this README:
 
@@ -60,5 +60,5 @@ azure workspace after you've created. Alternatively, you can write your own
 custom task to process data and upload it from there.
 
 .. _`Cookiecutter`: https://github.com/audrey/cookiecutter/
-.. _`@willem_meints`: https://github.com/wmeints/
+.. _`@wmeints`: https://github.com/wmeints/
 .. _`azureml-cookiecutter`: https://github.com/wmeints/azureml-cookiecutter/
