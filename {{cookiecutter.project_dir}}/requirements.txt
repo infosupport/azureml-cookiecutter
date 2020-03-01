@@ -1,7 +1,7 @@
-pandas>=1.0.1
-scikit-learn>=0.22.1
 azureml-defaults
-pyarrow>=0.11.0
-joblib>=0.14.1
 azureml-dataprep[fuse,pandas]
 click>=7.0
+joblib>=0.14.1
+pandas>=1.0.1
+pyarrow>=0.11.0
+scikit-learn>=0.22.1
