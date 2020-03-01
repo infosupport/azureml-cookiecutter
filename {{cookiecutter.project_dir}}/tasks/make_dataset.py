@@ -15,7 +15,6 @@ Parameters
 - name: The name of the dataset
 - input_folder: The path to the folder that contains the data to upload
 - output_folder: The path inside the datastore where the data should be stored
-
 """
 
 import click
