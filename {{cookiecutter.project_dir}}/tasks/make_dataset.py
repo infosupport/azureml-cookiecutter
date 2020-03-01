@@ -1,3 +1,23 @@
+"""
+Make dataset
+=============
+This task helps to create a new dataset in the workspace. 
+It uploads files to the datastore and then registers the dataset.
+
+Please note, files are uploaded to the folder you specify.
+If that folder already contains data, it's automatically overwritten!
+
+We're assuming you're uploading CSV files for the moment.
+If you've got other data, modify this task accordingly.
+
+Parameters
+-----------
+- name: The name of the dataset
+- input_folder: The path to the folder that contains the data to upload
+- output_folder: The path inside the datastore where the data should be stored
+
+"""
+
 import click
 from azureml.core import Workspace, Dataset
 
