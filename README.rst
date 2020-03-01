@@ -18,19 +18,19 @@ The project layout
 ------------------
 This template generates the following layout:
 
-    │   README.md                   # Describes how to operate the project
-    │   requirements.txt            # Dependencies used by the project
-    │
-    ├─── my_project
-    │       score.py                # The inference script
-    │       train.py                # The training script
-    │
-    └─── tasks
-            deploy_model.py         # Deploys the model 
-            make_dataset.py         # Creates the dataset for training
-            make_environment.py     # Creates a compute environment
-            make_workspace.py       # Creates or updates the Azure Machine Learning Workspace
-            train_model.py          # Trains the model using on the compute environment
+    | │   README.md                   # Describes how to operate the project
+    | │   requirements.txt            # Dependencies used by the project
+    | │
+    | ├─── my_project
+    | │       score.py                # The inference script
+    | │       train.py                # The training script
+    | │
+    | └─── tasks
+    |         deploy_model.py         # Deploys the model 
+    |         make_dataset.py         # Creates the dataset for training
+    |         make_environment.py     # Creates a compute environment
+    |         make_workspace.py       # Creates or updates the Azure Machine Learning Workspace
+    |         train_model.py          # Trains the model using on the compute environment
 
 Making changes to the project
 ----------------------------
