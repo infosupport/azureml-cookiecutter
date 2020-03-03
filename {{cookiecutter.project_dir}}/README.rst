@@ -12,7 +12,9 @@ Getting started
 ---------------
 To set up your project, follow these steps:
 
-- :code:`pip install -r requirements.txt`
+- :code:`conda create -n azureml python=3.7 pip`
+- :code:`conda activate azureml`
+- :code:`conda env update --prefix azureml --file conda_dependencies.yml`
 - :code:`python tasks/make_workspace.py --name <my_workspace> --resource_group <my_resource_group>`
 - :code:`python tasks/make_dataset.py --name <dataset_name> --input_file <my_data_file>`
 - :code:`python tasks/make_environment.py --name <name>`
