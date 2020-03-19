@@ -1,3 +1,18 @@
+"""
+Deploy model
+=============
+This tasks helps you deploy models to an Azure Container Instance.
+It uses the scoring script from the project package.
+
+Feel free to modify this script to your needs.
+Make sure you modify the {{cookiecutter.package_name}}/score.py as well.
+
+Parameters
+-----------
+- name: The name of the webservice
+- model: The name of the model to deploy to production
+"""
+
 import click
 from pathlib import Path
 from azureml.core import Workspace
