@@ -27,6 +27,9 @@ This template generates the following layout:
     │       score.py                # The inference script
     │       train.py                # The training script
     │
+    ├─── data                       # Stores the datasets
+    ├─── reports                    # Stores generated reports
+    ├─── notebooks                  # Stores Python notebooks
     └─── tasks
             deploy_model.py         # Deploys the model 
             make_dataset.py         # Creates the dataset for training
