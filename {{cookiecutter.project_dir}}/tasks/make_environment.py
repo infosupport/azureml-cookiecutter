@@ -7,9 +7,12 @@ You can change this in the script if you like.
 
 Parameters
 -----------
-- name: The name of the compute environment
-- vm_size: The size of VM to deploy (e.g. Standard_D3_v2 or Standard_NV6)
-- nodes: The maximum number of nodes in the cluster.
+name : str
+    The name of the compute environment
+vm_size : str
+    The size of VM to deploy (e.g. Standard_D3_v2 or Standard_NV6)
+nodes : int
+    The maximum number of nodes in the cluster.
 """
 
 import click
