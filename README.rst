@@ -20,14 +20,15 @@ This template generates the following layout:
 
 .. code::
 
-    │   README.md                   # Describes how to operate the project
-    │   requirements.txt            # Dependencies used by the project
+    ├─── README.md                  # Describes how to operate the project
+    ├─── requirements.txt           # Dependencies used by the project
     │
     ├─── my_project
     │       score.py                # The inference script
     │       train.py                # The training script
     │
     ├─── data                       # Stores the datasets
+    ├─── docs                       # Stores the project documentation
     ├─── reports                    # Stores generated reports
     ├─── notebooks                  # Stores Python notebooks
     └─── tasks

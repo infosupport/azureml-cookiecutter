@@ -1,4 +1,4 @@
-name: { { cookiecutter.package_name } }
+name: {{cookiecutter.package_name}}
 dependencies:
   - python=3.6.2
   - scikit-learn
