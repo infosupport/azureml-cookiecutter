@@ -1,11 +1,12 @@
-name: {{cookiecutter.package_name}}
+name: { { cookiecutter.package_name } }
 dependencies:
   - python=3.6.2
   - scikit-learn
   - pip:
-    - azureml-defaults
-    - azureml-dataprep[fuse,pandas]
-    - click>=7.0
-    - joblib>=0.14.1
-    - pandas>=1.0.1
-    - pyarrow>=0.11.0
+      - azureml-defaults
+      - azureml-dataprep[fuse,pandas]
+      - click>=7.0
+      - joblib>=0.14.1
+      - pandas>=1.0.1
+      - pyarrow>=0.11.0
+      - sphinx>=3.0
