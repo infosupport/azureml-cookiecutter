@@ -24,19 +24,19 @@ This template generates the following layout:
     ├─── requirements.txt           # Dependencies used by the project
     │
     ├─── my_project
-    │       score.py                # The inference script
-    │       train.py                # The training script
+    │    ├─── score.py              # The inference script
+    │    └─── train.py              # The training script
     │
     ├─── data                       # Stores the datasets
     ├─── docs                       # Stores the project documentation
     ├─── reports                    # Stores generated reports
     ├─── notebooks                  # Stores Python notebooks
     └─── tasks
-            deploy_model.py         # Deploys the model 
-            make_dataset.py         # Creates the dataset for training
-            make_environment.py     # Creates a compute environment
-            make_workspace.py       # Creates or updates the Azure Machine Learning Workspace
-            train_model.py          # Trains the model using on the compute environment
+         ├─── deploy_model.py       # Deploys the model 
+         ├─── make_dataset.py       # Creates the dataset for training
+         ├─── make_environment.py   # Creates a compute environment
+         ├─── make_workspace.py     # Creates or updates the Azure Machine Learning Workspace
+         └─── train_model.py        # Trains the model using on the compute environment
 
 Making changes to the project
 ----------------------------
