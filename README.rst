@@ -11,7 +11,7 @@ Getting started
 To use the template, follow these steps:
 
 - Open a new terminal window
-- Execute the command :code:`cookiecutter https://github.com/wmeints/azureml-cookiecutter`
+- Execute the command :code:`cookiecutter https://github.com/infosupport/azureml-cookiecutter`
 - Follow the on-screen instructions to set up your project
 
 The project layout
