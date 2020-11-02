@@ -108,8 +108,10 @@ We recommend installing the project using :code:`pip` in editable mode by runnin
 
   pip install -e .
 
-Please note that if you changed the dependencies file, you'll also need to update setup.py to include the new dependencies there as well.
-We understand that this can feel redundant, but there currently isn't a way to automate the process.
+Please note, :code:`setup.py` contains a list of dependencies required by your project. The same list of dependencies is contained
+in the :code:`conda_dependencies.yml` file. This is required, because :code:`setuptools` doesn't allow the use of Anaconda dependency
+files. Whenever you change the dependencies of your project, you'll need to add the dependency to the :code:`setup.py` file as well as the 
+:code:`conda_dependencies.yml` file. You'll also need to run :code:`pip install -e .` whenever you change the dependencies.
 
 .. _`Cookiecutter`: https://github.com/audrey/cookiecutter/
 .. _`@wmeints`: https://github.com/wmeints/
