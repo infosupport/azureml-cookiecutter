@@ -31,6 +31,7 @@ This template generates the following layout:
     ├─── docs                       # Stores the project documentation
     ├─── reports                    # Stores generated reports
     ├─── notebooks                  # Stores Python notebooks
+    ├─── tests                      # Stores the unit-tests for the project
     └─── tasks
          ├─── deploy_model.py       # Deploys the model 
          ├─── make_dataset.py       # Creates the dataset for training
