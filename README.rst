@@ -4,7 +4,7 @@ Azure Machine Learning Cookiecutter Template
 Setting up a project with Azure Machine Learning can be quite a lot of work
 some times. This template helps you set up a standard project layout.
 
-.. contents::
+.. contents:: In this README we'll cover the following topics:
 
 Getting started
 ---------------
@@ -42,4 +42,3 @@ This template generates the following layout:
 Making changes to the project
 ----------------------------
 If you think that something doesn't work, please open a new issue in this repository.
-I appreciate any pull requests that help improve my work. 
