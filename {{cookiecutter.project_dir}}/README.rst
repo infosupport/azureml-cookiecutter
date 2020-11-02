@@ -4,9 +4,7 @@
 This Azure Machine Learning project was generated using `Cookiecutter`_ along
 with `@wmeints`_'s `azureml-cookiecutter`_ template.
 
-We'll cover the following topics in this README:
-
-.. contents::
+.. contents:: We'll cover the following topics in this README:
 
 Getting started
 ---------------
@@ -90,6 +88,8 @@ Generating Documentation
 To make documentation easier, we've included Sphinx docs in the project.
 You can generate the HTML documentation using the following command:
 
+.. code-block::
+
   cd docs
   make html
 
@@ -105,6 +105,8 @@ We recommend placing the test code in a folder called :code:`tests` in the root 
 This isolates the tests from the rest of the project.
 
 We recommend installing the project using :code:`pip` in editable mode by running the following command in the root of the project:
+
+.. code-block::
 
   pip install -e .
 
