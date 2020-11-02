@@ -12,7 +12,7 @@ Getting started
 ---------------
 To set up your project, follow these steps:
 
-- :code:`conda create -f conda_dependencies.yml`
+- :code:`conda env create -f conda_dependencies.yml` -n {{cookiecutter.package_name}}
 - :code:`conda activate {{cookiecutter.package_name}}`
 - :code:`python tasks/make_workspace.py --name <my_workspace> --resource_group <my_resource_group>`
 - :code:`python tasks/make_dataset.py --name <dataset_name> --input_file <my_data_file>`
