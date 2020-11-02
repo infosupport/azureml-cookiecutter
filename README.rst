@@ -6,6 +6,11 @@ some times. This template helps you set up a standard project layout.
 
 .. contents:: In this README we'll cover the following topics:
 
+System requirements
+-------------------
+- Anaconda or Miniconda
+- Cookiecutter
+
 Getting started
 ---------------
 To use the template, follow these steps:
@@ -21,7 +26,7 @@ This template generates the following layout:
 .. code::
 
     ├─── README.md                  # Describes how to operate the project
-    ├─── requirements.txt           # Dependencies used by the project
+    ├─── conda_dependencies.yml     # Dependencies used by the project
     │
     ├─── my_project
     │    ├─── score.py              # The inference script
