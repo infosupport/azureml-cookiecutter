@@ -98,6 +98,19 @@ This command works on Windows, Mac, and Linux.
 Please refer to the `Sphinx documentation`_ to learn more about writing rich
 documentation based on your code and custom restructured text documents.
 
+Testing your code
+~~~~~~~~~~~~~~~~~
+It's highly recommended to write automated tests. You can use :code:`pytest` to run unit-tests.
+We recommend placing the test code in a folder called :code:`tests` in the root of the project.
+This isolates the tests from the rest of the project.
+
+We recommend installing the project using :code:`pip` in editable mode by running the following command in the root of the project:
+
+  pip install -e .
+
+Please note that if you changed the dependencies file, you'll also need to update setup.py to include the new dependencies there as well.
+We understand that this can feel redundant, but there currently isn't a way to automate the process.
+
 .. _`Cookiecutter`: https://github.com/audrey/cookiecutter/
 .. _`@wmeints`: https://github.com/wmeints/
 .. _`azureml-cookiecutter`: https://github.com/wmeints/azureml-cookiecutter/
