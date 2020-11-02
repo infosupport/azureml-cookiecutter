@@ -2,7 +2,7 @@ Azure Machine Learning Cookiecutter Template
 ============================================
 
 Setting up a project with Azure Machine Learning can be quite a lot of work
-some times. This template helps you set up a standard project layout.
+some times. This template helps you set up a standardized project layout.
 
 .. contents:: In this README we'll cover the following topics:
 
@@ -18,6 +18,15 @@ To use the template, follow these steps:
 - Open a new terminal window
 - Execute the command :code:`cookiecutter https://github.com/infosupport/azureml-cookiecutter`
 - Follow the on-screen instructions to set up your project
+
+Why this template?
+------------------
+We ran into the same issues over and over again with our machine learning projects.
+We do like creativity, but we think that it's good to have a solid base to start from.
+It saves you and your team a lot of time, because you don't have to spend time discussing the project 
+layout and MLOps frameworks you're going to use.
+All we ask is that you pick the machine learning framework and data processing tool.
+The rest is all taken care of. You're welcome :-)
 
 The project layout
 ------------------
