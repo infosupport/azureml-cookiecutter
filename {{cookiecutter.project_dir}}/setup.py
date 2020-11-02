@@ -17,6 +17,6 @@ setup(
     author_email='{{cookiecutter.author_email}}',
     packages=find_packages(exclude=['docs', 'tests']),
     install_requires=[
-        'tensorflow>=2.3'
+        # Add your dependencies here.
     ]
 )
