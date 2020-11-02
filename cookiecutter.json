@@ -3,4 +3,5 @@
   "project_name": "My project",
   "package_name": "my_project",
   "author_name": "my_name"
+  "author_email": "name@domain.org"
 }
