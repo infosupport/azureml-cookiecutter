@@ -11,15 +11,6 @@ System requirements
 - Anaconda or Miniconda
 - Cookiecutter
 
-Getting started
----------------
-To use the template, follow these steps:
-
-- Open a new terminal window
-- Execute the command :code:`pip install cookiecutter`
-- Execute the command :code:`cookiecutter https://github.com/infosupport/azureml-cookiecutter`
-- Follow the on-screen instructions to set up your project
-
 Why this template?
 ------------------
 We ran into the same issues over and over again with our machine learning projects.
@@ -28,6 +19,15 @@ It saves you and your team a lot of time, because you don't have to spend time d
 layout and MLOps frameworks you're going to use.
 All we ask is that you pick the machine learning framework and data processing tool.
 The rest is all taken care of. You're welcome :-)
+
+Getting started
+---------------
+To use the template, follow these steps:
+
+- Open a new terminal window
+- Execute the command :code:`pip install cookiecutter`
+- Execute the command :code:`cookiecutter https://github.com/infosupport/azureml-cookiecutter`
+- Follow the on-screen instructions to set up your project
 
 The project layout
 ------------------
