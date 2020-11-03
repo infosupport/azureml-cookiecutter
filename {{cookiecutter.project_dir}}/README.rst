@@ -98,6 +98,9 @@ This command works on Windows, Mac, and Linux.
 Please refer to the `Sphinx documentation`_ to learn more about writing rich
 documentation based on your code and custom restructured text documents.
 
+Note, we're using NumPy style docstrings to document functions, methods, modules, and classes.
+Please consult the `Numpy docstring styleguide`_ for more information.
+
 Testing your code
 ~~~~~~~~~~~~~~~~~
 It's highly recommended to write automated tests. You can use :code:`pytest` to run unit-tests.
@@ -119,3 +122,4 @@ files. Whenever you change the dependencies of your project, you'll need to add 
 .. _`@wmeints`: https://github.com/wmeints/
 .. _`azureml-cookiecutter`: https://github.com/wmeints/azureml-cookiecutter/
 .. _`Sphinx documentation`: https://www.sphinx-doc.org/en/master/
+.. _`Numpy docstring styleguide`: https://numpydoc.readthedocs.io/en/latest/format.html
