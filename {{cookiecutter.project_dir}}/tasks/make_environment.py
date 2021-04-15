@@ -22,9 +22,9 @@ from azureml.exceptions import ComputeTargetException
 
 
 @click.command()
-@click.option('--name', help='The name of the compute environment')
-@click.option('--vm_size', help='The size of the VM to deploy')
-@click.option('--nodes', help='The maximum size of the compute cluster')
+@click.option('--name', help='The name of the compute environment', type=str)
+@click.option('--vm_size', help='The size of the VM to deploy', type=str)
+@click.option('--nodes', help='The maximum size of the compute cluster', type=int)
 def main(name, vm_size, nodes):
     ws = Workspace.from_config()
 
