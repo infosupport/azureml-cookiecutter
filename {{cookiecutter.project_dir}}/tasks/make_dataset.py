@@ -34,7 +34,6 @@ from azureml.core import Workspace, Dataset
 def main(name, input_folder, output_folder):
     ws = Workspace.from_config()
     datastore = ws.get_default_datastore()
-    create_new_version = False
 
     datastore.upload(
         input_folder, 
@@ -42,14 +41,8 @@ def main(name, input_folder, output_folder):
         show_progress=True, 
         overwrite=True)
 
-    try:
-        Dataset.get_by_name(ws, name)
-        create_new_version = True
-    except Exception:
-        create_new_version = True
-        
     ds = Dataset.Tabular.from_delimited_files([(datastore, output_folder)])
-    ds.register(ws, name, create_new_version=create_new_version)
+    ds.register(ws, name, create_new_version=True)
 
 
 if __name__ == '__main__':
