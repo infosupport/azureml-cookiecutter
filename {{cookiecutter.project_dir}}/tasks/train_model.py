@@ -50,7 +50,7 @@ def main(experiment, environment, dataset):
     estimator = SKLearn(
         source_directory=root_folder,
         entry_script='{{cookiecutter.package_name}}/train.py',
-        conda_dependencies_file='conda_dependencies.yml',
+        pip_requirements_file_path='requirements.yml',
         compute_target=compute_target,
         inputs=datasets
     )
