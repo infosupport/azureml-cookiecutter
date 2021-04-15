@@ -8,15 +8,31 @@ with `@wmeints`_'s `azureml-cookiecutter`_ template.
 
 Getting started
 ---------------
+Although not required, we recommend you use `virtualenv`_ for your machine learning projects.
+You can install it using :code:`pip install virtualenv`. 
+
+Create a virtual environment using the following command:
+
+:code:`virtualenv -p 3.8.6 --pip 20.1 venv`
+
+When the installation is done, make sure you activate the environment.
+
+- Powershell: :code:`. venv/scripts/activate.ps1`
+- Bash: :code:`source venv/scripts/activate`
+
 To set up your project, follow these steps:
 
-- :code:`conda env create -f conda_dependencies.yml`
-- :code:`conda activate {{cookiecutter.package_name}}`
+- :code:`pip install -r requirements.txt`
 - :code:`python tasks/make_workspace.py --name <my_workspace> --resource_group <my_resource_group>`
+
+You now have all the requirements for your project installed on your machine and
+a workspace to train your models in.
+
+The following additional steps are useful to set up a dataset and compute environment for your project.
+We recommend at least setting up the compute environment as you need this to run experiments remotely.
+
 - :code:`python tasks/make_dataset.py --name <dataset_name> --input_file <my_data_file>`
 - :code:`python tasks/make_environment.py --name <name>`
-
-After executing these tasks you can start working on your project.
 
 Documentation
 -------------
