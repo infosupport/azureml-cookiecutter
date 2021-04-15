@@ -8,7 +8,7 @@ some times. This template helps you set up a standardized project layout.
 
 System requirements
 -------------------
-- Anaconda or Miniconda
+- Python 3.8.6 or higher
 - Cookiecutter
 
 Why this template?
