@@ -1,0 +1,8 @@
+azureml-defaults==1.26.0
+azureml-dataprep[fuse,pandas]
+click>=7.1
+joblib>=1.0.1
+pandas>=1.2.4
+pyarrow>=3.0.0
+sphinx>=3.5.4
+pytest>=6.2.3
