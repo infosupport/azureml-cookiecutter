@@ -36,7 +36,11 @@ This template generates the following layout:
 .. code::
 
     ├─── README.md                  # Describes how to operate the project
-    ├─── conda_dependencies.yml     # Dependencies used by the project
+    ├─── requirements.txt           # Dependencies used by the project
+    ├─── .gitignore                 # Ignored files for GIT
+    ├─── .amlignore                 # Ignored files for the Azure ML workspace
+    ├─── setup.py                   # Setup file in case you want to package your project as a pip package.
+    ├─── MANIFEST.in                # Manifest file for pip packaging.
     │
     ├─── my_project
     │    ├─── score.py              # The inference script
