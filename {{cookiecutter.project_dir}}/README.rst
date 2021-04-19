@@ -80,8 +80,11 @@ interim, and fully pre-processed datasets. We recommend you create a
 intermediate, and preprocessed datasets.
 
 Use the :code:`tasks/make_dataset.py` script to upload the datasets to the 
-azure workspace after you've created. Alternatively, you can write your own
-custom task to process data and upload it from there.
+azure workspace. 
+
+If you're working with a separate :code:`preprocess.py` script,
+we recommend you integrate that python script into the 
+:code:`tasks/make_dataset.py` python script.
 
 Using notebooks
 ~~~~~~~~~~~~~~~
