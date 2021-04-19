@@ -1,4 +1,6 @@
 data/
+docs/
+venv/
 logs/
 .azureml/
 tasks/
