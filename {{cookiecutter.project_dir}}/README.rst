@@ -72,10 +72,12 @@ possible. We also recommend that you split your data preprocessing in several
 sub-tasks each with its own script in the :code`tasks` folder. This will allow 
 you to repeat a step when something fails.
 
-Fro that reason, the project contains a :code:`data` folder. This folder is 
-split into three sub-folders: :code:`raw`, :code:`interim`, and 
-:code:`processed`. You can use these folders to store raw, interim, and fully 
-pre-processed datasets.
+To help you split the preprocessing steps from the training code, we added a 
+:code:`data` folder. This folder is split into three sub-folders: :code:`raw`, 
+:code:`interim`, and :code:`processed`. You can use these folders to store raw, 
+interim, and fully pre-processed datasets. We recommend you create a 
+:code:`preprocess.py` script in the project to process raw data into 
+intermediate, and preprocessed datasets.
 
 Use the :code:`tasks/make_dataset.py` script to upload the datasets to the 
 azure workspace after you've created. Alternatively, you can write your own
