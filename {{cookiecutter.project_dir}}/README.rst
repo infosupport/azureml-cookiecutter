@@ -8,14 +8,14 @@ with `@wmeints`_'s `azureml-cookiecutter`_ template.
 
 Getting started
 ---------------
-Although not required, we recommend you use `virtualenv`_ for your machine learning projects.
-You can install it using :code:`pip install virtualenv`. 
+Although not required, we recommend you use `virtualenv`_ for your machine 
+learning projects. You can install it using :code:`pip install virtualenv`. 
 
 Create a virtual environment using the following command:
 
 :code:`virtualenv -p 3.8.6 --pip 20.1 venv`
 
-When the installation is done, make sure you activate the environment.
+When the installation is done, make sure you activate the python environment.
 
 - Powershell: :code:`. venv/scripts/activate.ps1`
 - Bash: :code:`source venv/scripts/activate`
@@ -26,10 +26,17 @@ To set up your project, follow these steps:
 - :code:`python tasks/make_workspace.py --name <my_workspace> --resource_group <my_resource_group>`
 
 You now have all the requirements for your project installed on your machine and
-a workspace to train your models in.
+a workspace to train your models in. 
 
-The following additional steps are useful to set up a dataset and compute environment for your project.
-We recommend at least setting up the compute environment as you need this to run experiments remotely.
+.. sidebar:: You only need to create your workspace once.
+   
+   Please note, you only need to create the workspace once. Other team members
+   can download the :code:`settings.json` from the `Azure ML workspace`_ and 
+   copied into the :code:`.azureml` folder within the project directory.
+
+The following additional steps are useful to set up a dataset and compute 
+environment for your project. We recommend at least setting up the compute 
+environment as you need this to run experiments remotely.
 
 - :code:`python tasks/make_dataset.py --name <dataset_name> --input_file <my_data_file>`
 - :code:`python tasks/make_environment.py --name <name>`
@@ -79,8 +86,8 @@ Using notebooks
 This repository contains a folder called notebooks. You can add your Python
 notebooks to this folder. Use them as your scratch space to explore data.
 
-We encourage you to use scripts instead of the notebooks for any production code.
-Notebooks have several limitations that will hurt you in the long run:
+We encourage you to use scripts instead of the notebooks for any production 
+code. Notebooks have several limitations that will hurt you in the long run:
 
 - The order is determined by how you execute the cells. It doesn't have 
   to be in the order of appearance inside the notebook file.
@@ -114,24 +121,30 @@ This command works on Windows, Mac, and Linux.
 Please refer to the `Sphinx documentation`_ to learn more about writing rich
 documentation based on your code and custom restructured text documents.
 
-Note, we're using NumPy style docstrings to document functions, methods, modules, and classes.
-Please consult the `Numpy docstring styleguide`_ for more information.
+Note, we're using NumPy style docstrings to document functions, methods, 
+modules, and classes. Please consult the `Numpy docstring styleguide`_ for 
+more information.
 
 Testing your code
 ~~~~~~~~~~~~~~~~~
-It's highly recommended to write automated tests. You can use :code:`pytest` to run unit-tests.
-We recommend placing the test code in a folder called :code:`tests` in the root of the project.
-This isolates the tests from the rest of the project.
+It's highly recommended to write automated tests. You can use :code:`pytest` to 
+run unit-tests. We recommend placing the test code in a folder called 
+:code:`tests` in the root of the project. This isolates the tests from the rest 
+of the project.
 
-We recommend installing the project using :code:`pip` in editable mode by running the following command in the root of the project:
+We recommend installing the project using :code:`pip` in editable mode by 
+running the following command in the root of the project:
 
 .. code-block::
 
   pip install -e .
 
-Please note, :code:`setup.py` contains a list of dependencies required by your project. The same list of dependencies is contained
-in the :code:`conda_dependencies.yml` file. This is required, because :code:`setuptools` doesn't allow the use of Anaconda dependency
-files. Whenever you change the dependencies of your project, you'll need to add the dependency to the :code:`setup.py` file as well as the 
+Please note, :code:`setup.py` contains a list of dependencies required by your 
+project. The same list of dependencies is contained in the 
+:code:`conda_dependencies.yml` file. This is required, because 
+:code:`setuptools` doesn't allow the use of Anaconda dependency files. Whenever 
+you change the dependencies of your project, you'll need to add the dependency 
+to the :code:`setup.py` file as well as the 
 :code:`conda_dependencies.yml` file. 
 
 .. _`Cookiecutter`: https://github.com/audrey/cookiecutter/
@@ -139,3 +152,5 @@ files. Whenever you change the dependencies of your project, you'll need to add 
 .. _`azureml-cookiecutter`: https://github.com/wmeints/azureml-cookiecutter/
 .. _`Sphinx documentation`: https://www.sphinx-doc.org/en/master/
 .. _`Numpy docstring styleguide`: https://numpydoc.readthedocs.io/en/latest/format.html
+.. _`virtualenv`: https://pypi.org/project/virtualenv/
+.. _`Azure ML workspace`: https://ml.azure.com/
