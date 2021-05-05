@@ -66,12 +66,16 @@ Azure Machine Learning and this template support a number of machine learning to
 * Scikit-learn
 * Tensorflow
 * PyTorch
+* Spacy
+* NLTK
 
 Aside from these tools, we have tested the template with the following data science libraries:
 
 * Scipy
 * Numpy
 * Pandas
+* Matplotlib
+* Jupyter notebooks
 
 Can't find the tool you're using? Please let us know if it works for you and we'll add it to this list.
 
