@@ -57,6 +57,23 @@ This template generates the following layout:
          ├─── make_environment.py   # Creates a compute environment
          ├─── make_workspace.py     # Creates or updates the Azure Machine Learning Workspace
          └─── train_model.py        # Trains the model using on the compute environment
+         
+What tools can you use with this project?
+-----------------------------------------
+We don't prescribe any fixed number of machine learning tools to use with this template.
+Azure Machine Learning and this template support a number of machine learning tools:
+
+* Scikit-learn
+* Tensorflow
+* PyTorch
+
+Aside from these tools, we have tested the template with the following data science libraries:
+
+* Scipy
+* Numpy
+* Pandas
+
+Can't find the tool you're using? Please let us know if it works for you and we'll add it to this list.
 
 Making changes to the project
 ----------------------------
